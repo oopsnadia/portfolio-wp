@@ -1,0 +1,104 @@
+.skills-section {
+    width: 1440px;
+    height: 458px;
+    margin-top: 80px;
+    background: #121212;
+    
+
+    &__title {
+        width: 335px;
+        height: 27px;
+        font: normal 700 30px $Montserrat;
+        line-height: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        margin-left: 552px;
+        margin-bottom: 36px;
+        padding-top: 40px;
+    }
+
+    &__cards {
+        width: 1140px;
+        height: 295px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 172px;
+    }
+}
+
+.card {
+    width: 335px;
+    height: 295px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+
+    &__title {
+        width: 291px;
+        height: 27px;
+        font: normal 800 22px $Montserrat;
+        line-height: 27px;
+        color: #21243D;
+        margin: 24px 0px 0px 24px;
+
+    }
+
+    &__inner-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 271px;
+        height: 199.52px;
+        margin-top: 24px;
+        margin-left: 24px;
+        font: normal 400 20px $Zilla;
+        line-height: 24px;
+        color: #21243D;
+
+    }
+
+    &__skills {
+        width: 271px;
+        height: 27px;
+        line-height: 24px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__skills--logo {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    &__dot-group {
+        padding: 6.5px 0px;
+        margin-left: 20px;
+    }
+
+    &__skills--name {
+        width: 149px;
+    }
+
+    &__inner-container--middle {
+        @extend .card__inner-container;
+        height: 242.52px;
+        margin: 25px 32px 27.48px 32px;
+    }
+}
+
+.dot {
+    border-radius: 50%;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: #142850;
+
+    &--grey {
+        background: #142850;
+        opacity: 0.25;
+    }
+}

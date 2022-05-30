@@ -1,0 +1,64 @@
+.navbar {
+    position: absolute;
+    width: 1320px;
+    height: 24px;
+    left: 60px;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+
+
+
+    &__logo {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        font: normal 900 22px $Montserrat;
+        line-height: 26.82px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        text-decoration: none;
+
+    }
+
+    span {
+        font-weight: 900;
+    }
+
+
+    &__span-period {
+        color: #FF6464;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+        position: absolute;
+        width: 164px;
+        height: 24px;
+        left: 1168px;
+        top: 0px;
+        list-style: none;
+    }
+
+    &__link {
+        display: inline-block;
+        text-transform: capitalize;
+        width: 80px;
+        height: 24px;
+        font: normal 500 20px $Zilla;
+        line-height: 24px;
+        color: #21243D;
+        text-decoration: none;
+    }
+}

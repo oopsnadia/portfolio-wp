@@ -1,0 +1,35 @@
+.footer {
+    width: 1440px;
+    height: 182px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+    &__social {
+        width: 240px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+        margin-top: 51px;
+        margin-left: 600px;
+    }
+
+    &__social-icon {
+        font-size: 30px;
+        color: #21243D;
+    }
+
+    &__contact {
+        width: 277.55px;
+        height: 27px;
+        font: normal 400 18px $Montserrat;
+        line-height: 150%;
+        text-align: center;
+        color: #21243D;
+        margin: 26px 0px 48px 581px;
+    }
+}

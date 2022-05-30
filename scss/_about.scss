@@ -1,0 +1,159 @@
+.about {
+    width: 874px;
+    height: 143px;
+    margin-left: 283px;
+    margin-top: 120px;
+
+    &__title {
+        width: 874px;
+        height: 45px;
+        font: normal 800 44px $Montserrat;
+        line-height: 57px;
+        color: #21243D;
+        margin-bottom: 32px;
+    }
+
+    &__description {
+        width: 873px;
+        height: 66px;
+        left: 0px;
+        margin-top: 32px;
+        font: normal 400 16px $Zilla;
+        line-height: 24px;
+        color: #21243D;
+    }
+}
+
+
+.experience {
+    width: 874px;
+    height: 606px;
+    margin-left: 283px;
+    margin-top: 60px;
+
+    &__title { 
+        width: 155px;
+        height: 27px;
+        margin-left: 1px;
+        font: normal 400 22px $Montserrat;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        color: #FF6464;
+        margin-bottom: 32px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+        width: 874px;
+        height: 547px;
+        margin-bottom: 32px;
+    }
+}
+
+.experience-card {
+    width: 874px;
+    height: 161px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #E0E0E0;
+
+    &__title {
+        font: normal 700 28px $Montserrat;
+        line-height: 130%;
+        margin: 0px 0px 16px 0px;
+        display: flex;
+        align-items: center;
+        color: #21243D;
+    }
+
+    &__date {
+        font: normal 400 20px $Montserrat;
+        line-height: 24px;
+        color: #21243D;
+        margin-top: 16px 0px 15px 0px;
+    }
+
+    span {
+        margin: 0px 24px 0px 24px;
+    }
+
+    &__text {
+        margin: 15px 0px 29px 0px;
+        width: 874px;
+        height: 43px;
+        font: normal 400 16px $Zilla;
+        line-height: 24px;
+        color: #21243D;
+    }
+}
+
+.education {    
+width: 874px;
+height: 220px;
+margin-left: 283px;
+margin-top: 32px;
+
+
+&__title {  
+width: 198.64px;
+height: 27px;
+margin-left: 1.28px;
+font: normal 400 22px $Montserrat;
+line-height: 27px;
+display: flex;
+align-items: center;
+color: #FF6464;
+margin-bottom: 32px;
+}
+
+&__container {
+width: 874px;
+height: 161px;
+left: 0px;
+top: 59px;
+margin-bottom: 80px;
+}
+}
+
+.education-card {
+    width: 874px;
+    height: 161px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #E0E0E0;
+
+    &__title {
+        font: normal 700 28px $Montserrat;
+        line-height: 130%;
+        margin: 0px 0px 16px 0px;
+        display: flex;
+        align-items: center;
+        color: #21243D;
+    }
+
+    &__date {
+        font: normal 400 20px $Montserrat;
+        font-family: 'Montserrat';
+        line-height: 24px;
+        color: #21243D;
+        margin-top: 16px 0px 15px 0px;
+    }
+
+    span {
+        margin: 0px 24px 0px 24px;
+    }
+
+    &__text {
+        margin: 15px 0px 29px 0px;
+        width: 874px;
+        height: 43px;
+        font: normal 400 16px $Zilla;
+        line-height: 24px;
+        color: #21243D;
+    }
+}
