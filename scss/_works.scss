@@ -1,10 +1,6 @@
-
-
 .work-section {
     width: 874px;
-    height: 753px;
-    margin-top: 80px;
-    margin-left: 283px;
+    margin: 80px 0px 0px 283px;
 
     &--two {
         margin-left: 283px;
@@ -13,12 +9,10 @@
     &__title {
         width: 176px;
         height: 27px;
-        margin-left: 2px;
-        margin-top: 3px;
-        margin-bottom: 41px;
+        margin: 3px 0px 41px 2px;
         font: normal 400 22px $Montserrat;
         line-height: 27px;
-        color: #21243D;
+        color: $darkColor;
     }
 
     &__title--two {
@@ -26,76 +20,6 @@
         height: 43px;
         font: normal 800 44px $Montserrat;
         line-height: 57px;
-        margin-bottom: 60px;
-        margin-top: 120px;
-    }
-
-    .w-card__container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 32px;
-        width: 874px;
-        height: 682px;
+        margin: 120px 0px 60px 0px;
     }
 }
-    
-    .w-card {
-        width: 874px;
-        height: 206px;
-        display: flex;
-        flex-direction: row;
-        border-bottom: 1px solid #E0E0E0;
-    
-        &__img {
-            width: 246px;
-            height: 180px;
-            margin: 11px 0px 15px 0px;
-            background: url(image.png);
-            border-radius: 6px;
-        }
-    
-        &__info {
-            margin: 11px 0px 15px 18px;
-        }
-    
-        &__title {
-            font: normal 700 28px $Montserrat;
-            line-height: 130%;
-            margin: 0px 0px 16px 0px;
-            display: flex;
-            align-items: center;
-            color: #21243D;
-        }
-    
-        &__text {
-            margin: 24px 16px 0px 0px;
-            width: 594px;
-            height: 85px; 
-            font: normal 400 16px $Zilla;
-            line-height: 150%;
-            color: #21243D;
-        }
-    
-        &__category {
-            width: 374px;
-            height: 24px;
-            left: 0px;
-            top: 3px;
-            font: normal 400 18px $Montserrat;
-            font-size: 18px;
-            line-height: 150%;
-            color: #8695A4;
-        }
-    }
-    
-    .pill {
-        padding: 0px 12.5px;
-        width: 67px;
-        height: 24px;
-        background: #142850;
-        border-radius: 50px;
-        color: #FFFFFF;
-        font: normal 800 18px $Heebo;
-        margin-right: 20px;
-    }

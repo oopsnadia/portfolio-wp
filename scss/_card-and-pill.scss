@@ -1,0 +1,119 @@
+.card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    width: 874px;
+}
+
+.card {
+    width: 874px;
+    height: 206px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $borderColor;
+
+    /*card education & experience*/
+    &--e {
+        height: 161px;
+    }
+    
+    /*card single work*/
+    &--sw {
+        height: 158px;
+        border: none;
+    }
+
+    &__img {
+        width: 246px;
+        height: 180px;
+        margin: 11px 0px 15px 0px;
+        background: url(image.png);
+        border-radius: 6px;
+    }
+
+
+    &__info {
+        margin: 11px 0px 15px 18px;
+    }
+
+    /* card info experience & education*/
+    &--info-e {
+        margin: 0px;
+    }
+
+    &__title {
+        font: normal 700 28px $Montserrat;
+        line-height: 130%;
+        margin: 0px 0px 16px 0px;
+        display: flex;
+        align-items: center;
+        color: $darkColor;
+        text-decoration: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    /*card title single work*/
+    &--title-sw {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin: 24px 16px 0px 0px;
+        width: 594px;
+        font: normal 400 16px $Zilla;
+        line-height: 150%;
+        color: $darkColor;
+    }
+
+    /*card text education & experience*/
+    &--text-e {
+        margin: 15px 0px 29px 0px;
+        width: 874px;
+        height: 43px;
+    }
+
+    /*card text single work*/
+    &--text-sw {
+        width: 874px;
+    }
+
+    &__tag {
+        width: 374px;
+        height: 24px;
+        left: 0px;
+        top: 3px;
+        font: normal 400 18px $Montserrat;
+        font-size: 18px;
+        line-height: 150%;
+        color: $greyColor;
+    }
+
+    /*card tag single work*/
+    &--tag-sw {
+        width: 332px;
+        color: $darkColor;
+        height: 27px;
+    }
+
+    &__date {
+        font: normal 400 20px $Montserrat;
+        line-height: 24px;
+        color: $darkColor;
+        margin-top: 16px 0px 15px 0px;
+    }
+}
+
+.pill {
+    padding: 0px 12.5px;
+    width: 67px;
+    height: 24px;
+    background: #142850;
+    border-radius: 50px;
+    color: $whiteColor;
+    font: normal 800 18px $Heebo;
+    margin-right: 20px;
+}

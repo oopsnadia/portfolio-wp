@@ -6,7 +6,6 @@
     flex-direction: row;
 
     &__text-box {
-
         width: 538px;
         height: 283px;
         margin-top: 18px;
@@ -23,14 +22,12 @@
     }
 
     &__image {
-
         width: 415.96px;
         height: 280.24px;
         margin-left: 132px;
         filter: drop-shadow(9.76px 9.76px #EBEBEB);
     }
 }
-
 
 .button {
     box-sizing: border-box;
@@ -42,15 +39,15 @@
     gap: 10px;
     width: 201px;
     height: 44px;
-    border: 1px solid #21243D;
+    border: 1px solid $darkColor;
     font: normal 500 20px $Zilla;
     line-height: 24px;
     text-decoration: none;
-    color: #21243D;
+    color: $darkColor;
 
     &:hover {
-        background-color: #FF6464;
-        color: white;
+        background-color: $actionColor;
+        color: $whiteColor;
         border: none;
     }
 }

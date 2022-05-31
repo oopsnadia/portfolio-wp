@@ -8,10 +8,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 4px;
-
-
 
     &__logo {
         position: absolute;
@@ -33,7 +30,7 @@
 
 
     &__span-period {
-        color: #FF6464;
+        color: $actionColor;
     }
 
     &__links {
@@ -41,13 +38,11 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 0px;
         gap: 4px;
         position: absolute;
         width: 164px;
         height: 24px;
         left: 1168px;
-        top: 0px;
         list-style: none;
     }
 
@@ -58,7 +53,11 @@
         height: 24px;
         font: normal 500 20px $Zilla;
         line-height: 24px;
-        color: #21243D;
+        color: $darkColor;
         text-decoration: none;
+
+        &--about, &--works {
+            color: $actionColor;
+        }
     }
 }

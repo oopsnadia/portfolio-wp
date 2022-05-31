@@ -1,7 +1,114 @@
+/* FONTS */
+/* COLORS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  width: 874px;
+}
+
+.card {
+  width: 874px;
+  height: 206px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #E0E0E0;
+  /*card education & experience*/
+  /*card single work*/
+  /* card info experience & education*/
+  /*card title single work*/
+  /*card text education & experience*/
+  /*card text single work*/
+  /*card tag single work*/
+}
+.card--e {
+  height: 161px;
+}
+.card--sw {
+  height: 158px;
+  border: none;
+}
+.card__img {
+  width: 246px;
+  height: 180px;
+  margin: 11px 0px 15px 0px;
+  background: url(image.png);
+  border-radius: 6px;
+}
+.card__info {
+  margin: 11px 0px 15px 18px;
+}
+.card--info-e {
+  margin: 0px;
+}
+.card__title {
+  font: normal 700 28px "Montserrat", sans-serif;
+  line-height: 130%;
+  margin: 0px 0px 16px 0px;
+  display: flex;
+  align-items: center;
+  color: #21243D;
+  text-decoration: none;
+}
+.card__title a {
+  text-decoration: none;
+}
+.card--title-sw {
+  margin-bottom: 20px;
+}
+.card__text {
+  margin: 24px 16px 0px 0px;
+  width: 594px;
+  font: normal 400 16px "Zilla Slab", serif;
+  line-height: 150%;
+  color: #21243D;
+}
+.card--text-e {
+  margin: 15px 0px 29px 0px;
+  width: 874px;
+  height: 43px;
+}
+.card--text-sw {
+  width: 874px;
+}
+.card__tag {
+  width: 374px;
+  height: 24px;
+  left: 0px;
+  top: 3px;
+  font: normal 400 18px "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #8695A4;
+}
+.card--tag-sw {
+  width: 332px;
+  color: #21243D;
+  height: 27px;
+}
+.card__date {
+  font: normal 400 20px "Montserrat", sans-serif;
+  line-height: 24px;
+  color: #21243D;
+  margin-top: 16px 0px 15px 0px;
+}
+
+.pill {
+  padding: 0px 12.5px;
+  width: 67px;
+  height: 24px;
+  background: #142850;
+  border-radius: 50px;
+  color: #fff;
+  font: normal 800 18px "Heebo", sans-serif;
+  margin-right: 20px;
 }
 
 .navbar {
@@ -14,7 +121,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
   gap: 4px;
 }
 .navbar__logo {
@@ -40,13 +146,11 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
   gap: 4px;
   position: absolute;
   width: 164px;
   height: 24px;
   left: 1168px;
-  top: 0px;
   list-style: none;
 }
 .navbar__link {
@@ -58,6 +162,9 @@
   line-height: 24px;
   color: #21243D;
   text-decoration: none;
+}
+.navbar__link--about, .navbar__link--works {
+  color: #FF6464;
 }
 
 .hero {
@@ -105,7 +212,7 @@
 }
 .button:hover {
   background-color: #FF6464;
-  color: white;
+  color: #fff;
   border: none;
 }
 
@@ -123,9 +230,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
-  margin-left: 552px;
-  margin-bottom: 36px;
+  color: #fff;
+  margin: 0px 0px 36px 552px;
   padding-top: 40px;
 }
 .skills-section__cards {
@@ -137,14 +243,14 @@
   margin-left: 172px;
 }
 
-.card {
+.box {
   width: 335px;
   height: 295px;
-  background: #FFFFFF;
+  background: #fff;
   box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
   border-radius: 4px;
 }
-.card__title {
+.box__title {
   width: 291px;
   height: 27px;
   font: normal 800 22px "Montserrat", sans-serif;
@@ -152,38 +258,39 @@
   color: #21243D;
   margin: 24px 0px 0px 24px;
 }
-.card__inner-container, .card__inner-container--middle {
+.box__inner-container, .box__inner-container--middle {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 271px;
   height: 199.52px;
-  margin-top: 24px;
-  margin-left: 24px;
+  margin: 24px 0px 0px 24px;
   font: normal 400 20px "Zilla Slab", serif;
   line-height: 24px;
   color: #21243D;
 }
-.card__skills {
+.box__list-of-skills {
   width: 271px;
   height: 27px;
   line-height: 24px;
   display: flex;
   flex-direction: row;
 }
-.card__skills--logo {
+.box__list-of-skills--logo {
   width: 24px;
   height: 24px;
   margin-right: 8px;
 }
-.card__dot-group {
+.box__dot-group {
+  width: 102px;
   padding: 6.5px 0px;
   margin-left: 20px;
+  line-height: 14px;
 }
-.card__skills--name {
-  width: 149px;
+.box__list-of-skills--name {
+  width: 117px;
 }
-.card__inner-container--middle {
+.box__inner-container--middle {
   height: 242.52px;
   margin: 25px 32px 27.48px 32px;
 }
@@ -202,9 +309,7 @@
 
 .work-section {
   width: 874px;
-  height: 753px;
-  margin-top: 80px;
-  margin-left: 283px;
+  margin: 80px 0px 0px 283px;
 }
 .work-section--two {
   margin-left: 283px;
@@ -212,9 +317,7 @@
 .work-section__title {
   width: 176px;
   height: 27px;
-  margin-left: 2px;
-  margin-top: 3px;
-  margin-bottom: 41px;
+  margin: 3px 0px 41px 2px;
   font: normal 400 22px "Montserrat", sans-serif;
   line-height: 27px;
   color: #21243D;
@@ -224,71 +327,77 @@
   height: 43px;
   font: normal 800 44px "Montserrat", sans-serif;
   line-height: 57px;
-  margin-bottom: 60px;
-  margin-top: 120px;
-}
-.work-section .w-card__container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  width: 874px;
-  height: 682px;
+  margin: 120px 0px 60px 0px;
 }
 
-.w-card {
-  width: 874px;
-  height: 206px;
+.breadcrumb {
+  width: 220px;
+  height: 19px;
+  margin: 134px 0px 0px 283px;
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #E0E0E0;
-}
-.w-card__img {
-  width: 246px;
-  height: 180px;
-  margin: 11px 0px 15px 0px;
-  background: url(image.png);
-  border-radius: 6px;
-}
-.w-card__info {
-  margin: 11px 0px 15px 18px;
-}
-.w-card__title {
-  font: normal 700 28px "Montserrat", sans-serif;
-  line-height: 130%;
-  margin: 0px 0px 16px 0px;
-  display: flex;
   align-items: center;
-  color: #21243D;
-}
-.w-card__text {
-  margin: 24px 16px 0px 0px;
-  width: 594px;
-  height: 85px;
-  font: normal 400 16px "Zilla Slab", serif;
-  line-height: 150%;
-  color: #21243D;
-}
-.w-card__category {
-  width: 374px;
-  height: 24px;
-  left: 0px;
-  top: 3px;
-  font: normal 400 18px "Montserrat", sans-serif;
-  font-size: 18px;
-  line-height: 150%;
-  color: #8695A4;
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
-.pill {
-  padding: 0px 12.5px;
-  width: 67px;
-  height: 24px;
-  background: #142850;
-  border-radius: 50px;
-  color: #FFFFFF;
-  font: normal 800 18px "Heebo", sans-serif;
-  margin-right: 20px;
+.breadcrumb__item {
+  font: normal 400 14px "Zilla Slab", serif;
+}
+.breadcrumb__item--link {
+  font: normal 600 14px "Zilla Slab", serif;
+  text-decoration: none;
+}
+.breadcrumb__item__icon {
+  width: 16px;
+  height: 16px;
+}
+
+/*****************************************/
+.single-work__header {
+  width: 874px;
+  height: 158px;
+  margin: 16px 0px 87px 283px;
+}
+
+.single-work {
+  width: 874px;
+  margin: 60px 0px 0px 283px;
+  display: flex;
+  flex-direction: column;
+}
+.single-work__img {
+  width: 874px;
+  height: 460px;
+}
+.single-work__img--margin {
+  margin-top: 32px;
+}
+.single-work__h2 {
+  width: 677px;
+  height: 45px;
+  font: normal 700 34px "Montserrat", sans-serif;
+  line-height: 41px;
+  color: #21243D;
+  margin-top: 40px;
+}
+.single-work__h3 {
+  margin-top: 16px;
+  width: 677px;
+  height: 29px;
+  font: normal 700 30px "Montserrat", sans-serif;
+  line-height: 37px;
+  color: #21243D;
+}
+.single-work__text {
+  width: 874px;
+  height: 48px;
+  margin: 24px 0px 32px 0px;
+  font: normal 400 16 "Zilla Slab", serif;
+  line-height: 150%;
+  color: #000;
 }
 
 .footer {
@@ -305,10 +414,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
   gap: 40px;
-  margin-top: 51px;
-  margin-left: 600px;
+  margin: 51px 0px 0px 600px;
 }
 .footer__social-icon {
   font-size: 30px;
@@ -327,8 +434,7 @@
 .about {
   width: 874px;
   height: 143px;
-  margin-left: 283px;
-  margin-top: 120px;
+  margin: 120px 0px 0px 283px;
 }
 .about__title {
   width: 874px;
@@ -348,124 +454,21 @@
   color: #21243D;
 }
 
-.experience {
+.experience, .education {
   width: 874px;
-  height: 606px;
+  margin: 60px 0px 0px 283px;
   margin-left: 283px;
   margin-top: 60px;
 }
-.experience__title {
+.experience__title, .education__title {
   width: 155px;
   height: 27px;
-  margin-left: 1px;
+  margin: 0px 0px 32px 1px;
   font: normal 400 22px "Montserrat", sans-serif;
   line-height: 27px;
   display: flex;
   align-items: center;
   color: #FF6464;
-  margin-bottom: 32px;
-}
-.experience__container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 32px;
-  width: 874px;
-  height: 547px;
-  margin-bottom: 32px;
-}
-
-.experience-card {
-  width: 874px;
-  height: 161px;
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid #E0E0E0;
-}
-.experience-card__title {
-  font: normal 700 28px "Montserrat", sans-serif;
-  line-height: 130%;
-  margin: 0px 0px 16px 0px;
-  display: flex;
-  align-items: center;
-  color: #21243D;
-}
-.experience-card__date {
-  font: normal 400 20px "Montserrat", sans-serif;
-  line-height: 24px;
-  color: #21243D;
-  margin-top: 16px 0px 15px 0px;
-}
-.experience-card span {
-  margin: 0px 24px 0px 24px;
-}
-.experience-card__text {
-  margin: 15px 0px 29px 0px;
-  width: 874px;
-  height: 43px;
-  font: normal 400 16px "Zilla Slab", serif;
-  line-height: 24px;
-  color: #21243D;
-}
-
-.education {
-  width: 874px;
-  height: 220px;
-  margin-left: 283px;
-  margin-top: 32px;
-}
-.education__title {
-  width: 198.64px;
-  height: 27px;
-  margin-left: 1.28px;
-  font: normal 400 22px "Montserrat", sans-serif;
-  line-height: 27px;
-  display: flex;
-  align-items: center;
-  color: #FF6464;
-  margin-bottom: 32px;
-}
-.education__container {
-  width: 874px;
-  height: 161px;
-  left: 0px;
-  top: 59px;
-  margin-bottom: 80px;
-}
-
-.education-card {
-  width: 874px;
-  height: 161px;
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid #E0E0E0;
-}
-.education-card__title {
-  font: normal 700 28px "Montserrat", sans-serif;
-  line-height: 130%;
-  margin: 0px 0px 16px 0px;
-  display: flex;
-  align-items: center;
-  color: #21243D;
-}
-.education-card__date {
-  font: normal 400 20px "Montserrat", sans-serif;
-  font-family: "Montserrat";
-  line-height: 24px;
-  color: #21243D;
-  margin-top: 16px 0px 15px 0px;
-}
-.education-card span {
-  margin: 0px 24px 0px 24px;
-}
-.education-card__text {
-  margin: 15px 0px 29px 0px;
-  width: 874px;
-  height: 43px;
-  font: normal 400 16px "Zilla Slab", serif;
-  line-height: 24px;
-  color: #21243D;
 }
 
 /*# sourceMappingURL=styles.css.map */
